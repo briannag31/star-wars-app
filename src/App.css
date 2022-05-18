@@ -1,7 +1,13 @@
 .App {
   text-align: center;
-}
+  background-color: black;
 
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

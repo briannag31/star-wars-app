@@ -3,6 +3,7 @@ import Ship from "./components/Ship"
 import './App.css';
 
 function App() {
+  
   const [ships, setShips] = useState(null)
   
   const getShip = async () =>{
@@ -16,8 +17,8 @@ function App() {
 
   return(
     <div className = "App">
-      <h1>Star Wars Starship Fleet</h1>
-      <section>
+      <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/300px-Star_Wars_Logo.svg.png' alt='Star Wars Logo'/>
+      <section className='cards'>
         {ships && ships.results.map(shipElement => (
           <Ship name={shipElement.name}/>
         ))}
